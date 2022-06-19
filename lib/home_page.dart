@@ -11,14 +11,36 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
-    return ElevatedButton(
-      onPressed: () {
-        Navigator.of(context).pushNamed(
-          '/pageTwo',
-          arguments: "a"
-        ).then((value) => print(value));
-      }, 
-      child: const Text("Go!")
+    return Scaffold(
+      body: Container(
+        padding: const EdgeInsets.all(28),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            const Icon(
+              Icons.person,
+              size: 38,
+              ),
+            const TextField(
+              decoration: InputDecoration(hintText: "User")
+            ),
+            const SizedBox(height: 18),
+            const TextField(
+              decoration: InputDecoration(hintText: "Password")
+            ),
+            const SizedBox(height: 18),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.of(context).pushNamed(
+                  '/pageTwo',
+                  arguments: "a"
+                );
+              }, 
+              child: const Text("Login")
+            ),
+          ],
+        ),
+      ),
     );
   }
 }
