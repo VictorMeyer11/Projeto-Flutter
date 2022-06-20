@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:learning/controllers/login_controller.dart';
+import 'package:learning/domain/controllers/login_controller.dart';
 
 class CustomValueListenableBuilder extends StatelessWidget {
   const CustomValueListenableBuilder({Key? key, required this.loginController}) : super(key: key);

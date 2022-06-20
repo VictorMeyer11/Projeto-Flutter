@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:learning/controllers/login_controller.dart';
-import 'package:learning/pages/login/components/custom_value_listenable_builder.dart';
-import 'package:learning/pages/login/widgets/custom_text_field.dart';
+import 'package:learning/domain/controllers/login_controller.dart';
+import 'package:learning/presentation/pages/login/components/custom_value_listenable_builder.dart';
+import 'package:learning/presentation/pages/login/widgets/custom_text_field.dart';
 
 class LoginPage extends StatelessWidget {
   LoginPage({Key? key, required this.title}) : super(key: key);
