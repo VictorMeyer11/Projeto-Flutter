@@ -28,7 +28,7 @@ class LoginPage extends StatelessWidget {
             ),
             const SizedBox(height: 18),
             CustomTextField(
-              onChanged: _controller.setLogin, 
+              onChanged: _controller.setPass, 
               label: "Password",
               obscureText: true,
             ),

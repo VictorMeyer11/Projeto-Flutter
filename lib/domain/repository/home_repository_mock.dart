@@ -1,7 +1,7 @@
 import 'dart:convert';
 
 import 'package:flutter/services.dart';
-import 'package:learning/data/repository/home_repository.dart';
+import 'package:learning/domain/repository/home_repository.dart';
 import 'package:learning/domain/models/post_model.dart';
 
 class HomeRepositoryMock implements HomeRepository {

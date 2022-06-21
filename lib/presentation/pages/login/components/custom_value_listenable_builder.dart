@@ -16,10 +16,7 @@ class CustomValueListenableBuilder extends StatelessWidget {
           onPressed: () {
             loginController.auth().then((result) {
               if(result) {
-                Navigator.of(context).pushReplacementNamed(
-                  '/home_page',
-                  arguments: "a"
-                );
+                Navigator.of(context).pushReplacementNamed('/homePage');
               } else {
                 ScaffoldMessenger.of(context).showSnackBar(
                   const SnackBar(content: Text("Failed!"))
