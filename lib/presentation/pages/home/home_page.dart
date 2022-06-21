@@ -31,6 +31,10 @@ class _HomePageState extends State<HomePage> {
             separatorBuilder: (_, __) => const Divider(),
             itemBuilder: (_, index) =>
               ListTile(
+                onTap: () => Navigator.of(context).pushNamed(
+                  '/subHome', 
+                  arguments: list[index]
+                ),
                 title: Text(list[index].title),
                 leading: Text(list[index].id.toString()),
                 trailing: const Icon(Icons.arrow_forward)

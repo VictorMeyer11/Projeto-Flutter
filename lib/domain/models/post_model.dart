@@ -6,6 +6,11 @@ class PostModel {
 
   PostModel(this.userId, this.id, this.title, this.body);
 
+  @override
+  String toString() {
+    return "";
+  }
+
   factory PostModel.fromJson(Map json) {
     return PostModel(
       json['userId'], 
